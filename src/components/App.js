@@ -8,7 +8,7 @@ const App = () => {
 
     function handleClick(e) {
         e.preventDefault()
-        for(index of movies){
+        for(let index of movies){
           if(index.title===inputValue){
               setResult(inputValue)
           }  
