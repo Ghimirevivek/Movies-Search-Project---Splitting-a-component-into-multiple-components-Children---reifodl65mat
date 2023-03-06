@@ -29,7 +29,9 @@ const App = () => {
           onChange={handleChange}
           value={inputValue}
           id="movie-input"
-        ></input>
+        >
+          {movies.title}
+        </input>
         <button id="button" onClick={handleClick}>
           Search
         </button>
@@ -47,3 +49,4 @@ const App = () => {
 }
 
 export default App
+
