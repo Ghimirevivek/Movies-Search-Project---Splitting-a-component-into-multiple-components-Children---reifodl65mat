@@ -29,6 +29,7 @@ const App = () => {
           onChange={handleChange}
           value={inputValue}
           id="movie-input"
+          className="movie"
         >
           {movies.title}
         </input>
