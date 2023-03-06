@@ -6,9 +6,17 @@ const App = () => {
     const [inputValue, setInputValue] = useState("");
     const [results, setResult] = useState(null);
 
-    function handleClick(e) {}
+    function handleClick(e) {
+        e.preventDefault()
+        for(index of movies){
+          if(index.title===inputValue){
+              setResult(inputValue)
+          }  
+    }
 
-    function handleChange(e) {}
+    function handleChange(e) {
+        setInputValue(e.target.value)
+    }
 
     return (
         <div id="main">
